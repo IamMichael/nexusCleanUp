@@ -112,6 +112,7 @@ case "$1" in
 ;;
   "-d")
   check_registry
+  images=${*/-dd/}
   images=${images/-d/}
   delete_image
 ;;
