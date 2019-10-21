@@ -29,8 +29,9 @@ fi
 
 # Command-line JSON processor
 if [[ ! -f /usr/bin/jq ]]; then
-  echo "Install jq"
-  yum -y install jq > /dev/null 2>&1
+  echo "Command-line JSON processor jq does not installed."
+  echo "Please yum -y install jq"
+  exit 1
 fi
 
 # 检测仓库的可用性
